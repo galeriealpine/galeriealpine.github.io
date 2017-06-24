@@ -1,0 +1,14 @@
+---
+title: Galerie Alpine
+layout: main
+---
+{% for post in site.posts limit:3 %}
+<br />
+	<strong>{{ post.title }}</strong><br />
+	<div class="">
+		{{ post.date | date: "%B %d, %Y" }}
+	</div>
+	{{ post.excerpt }}
+	<a href="{{ post.url }}">Read More...</a><br />
+	<br />
+{% endfor %}

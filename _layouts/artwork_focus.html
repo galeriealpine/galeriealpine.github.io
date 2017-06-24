@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+		{% include header.html %}
+
+		<body>
+				{% include small_contact.html %}
+
+				{% include main_menu.html %}
+
+				<h2>{{ page.title }}</h2>
+
+				{{ page.date | date: "%B %d, %Y" }}
+
+				<div class="">
+					{{ content }}
+				</div>
+		</body>
+
+		{% include footer.html %}
+
+</html>

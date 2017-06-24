@@ -1,0 +1,6 @@
+name: "Galerie Alpine"
+description: "Fine Art in the heart of the Alps"
+baseurl: "https://www.galeriealpine.github.io"
+future: false
+markdown: kramdown
+permalink: pretty

@@ -1,0 +1,7 @@
+_drafts
+Gemfile
+Gemfile.lock
+_site
+.DS_Store
+vim.*
+current_wp

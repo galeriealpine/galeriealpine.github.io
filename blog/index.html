@@ -1,0 +1,13 @@
+---
+title: Blog Archive
+layout: main
+---
+<br />
+{% for post in site.posts %}
+	<a href="{{ post.url }}">{{ post.title }}
+		<br />
+		<img src="{{ post.image_dir }}{{ post.images[0] }}" />
+	</a>
+	<br />
+	<br />
+{% endfor %}

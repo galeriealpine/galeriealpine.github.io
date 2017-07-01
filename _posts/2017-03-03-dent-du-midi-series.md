@@ -1,5 +1,6 @@
 ---
 title: Dent du Midi series
+author: Cat Saunders
 layout: studio
 tags:
     - dents_du_midi

@@ -1,5 +1,6 @@
 ---
 title: Sublime Inspiration - An African Mountain in the Alps?
+author: Bill O'Connor
 layout: artwork_focus
 tags:
     - matterhorn

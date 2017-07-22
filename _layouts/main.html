@@ -4,15 +4,14 @@
 		{% include header.html %}
 
 		<body>
-				{% include small_contact.html %}
-
+			<div class="container">
 				{% include main_menu.html %}
 
-				<div class="">
-					{{ content }}
-				</div>
+				{{ content }}
+			</div>
 		</body>
 
-		{% include footer.html %}
-
+		<div class="container">
+			{% include footer.html %}
+		</div>
 </html>

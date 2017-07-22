@@ -4,19 +4,18 @@
 		{% include header.html %}
 
 		<body>
-				{% include small_contact.html %}
-
+			<div class="container">
 				{% include main_menu.html %}
 
 				<h2>{{ page.title }}</h2>
 
 				{{ page.date | date: "%B %d, %Y" }}
 
-				<div class="">
-					{{ content }}
-				</div>
+				{{ content }}
+			</div>
 		</body>
 
-		{% include footer.html %}
-
+		<div class="container">
+			{% include footer.html %}
+		</div>
 </html>

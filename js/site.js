@@ -88,6 +88,12 @@ $(document).ready(function() {
     })
   }
 
+  $('.slideshow').slick({
+    infinite: true,
+    dots: true,
+    arrows: true,
+    autoplaySpeed: 2000
+  });
 
   init();
 

@@ -2,12 +2,22 @@
 title: Blog Archive
 layout: main
 ---
-<br />
 {% for post in site.posts %}
-	<a href="{{ post.url }}">{{ post.title }}
+	{% assign i = forloop.index | modulo:2 %}
+	{% if i == 1 %}
+		<div class="row">
+	{% endif %}
+		<div class="six columns">
+			<a href="{{ post.url }}">
+				<h5>{{ post.title }}</h5>
+			</a>
+			<div>{{ post.author }}, {{ post.date | date: "%B %d, %Y" }}</div>
+			<a href="{{ post.url }}">
+				<img class="u-max-full-width" src="{{ post.image_dir }}{{ post.images[0] }}" />
+			</a>
+		</div>
+	{% if i == 0 %}
+		</div>
 		<br />
-		<img class="blog" src="{{ post.image_dir }}{{ post.images[0] }}" />
-	</a>
-	<br />
-	<br />
+	{% endif %}
 {% endfor %}

@@ -1,7 +1,7 @@
 ---
 title: Art Classes in the Atelier
 author: Sophie Scott
-layout: atelier
+layout: blog
 tags:
     - adult_painting_classes
     - artist_of_the_month

@@ -183,6 +183,7 @@ img.blog {
     display: block;
   }
   .popover {
+	z-index: 99;
     display: none;
     position: absolute;
     top: 0;

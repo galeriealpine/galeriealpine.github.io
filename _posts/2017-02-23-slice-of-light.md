@@ -1,7 +1,7 @@
 ---
 title: Slice Of Light
 author: Emma Pigott
-layout: artwork_focus
+layout: blog
 tags:
     - dark_moods
     - dents_du_midi

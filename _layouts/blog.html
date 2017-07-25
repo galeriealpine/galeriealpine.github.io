@@ -8,8 +8,7 @@
 				{% include main_menu.html %}
 
 				<h2>{{ page.title }}</h2>
-
-				{{ page.date | date: "%B %d, %Y" }}
+				{{ page.author }}, {{ page.date | date: "%B %d, %Y" }}
 
 				{{ content }}
 

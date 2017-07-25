@@ -2,13 +2,17 @@
 title: Galerie Alpine
 layout: main
 ---
-{% for post in site.posts limit:1 %}
-<br />
-	<strong>{{ post.title }}</strong><br />
-	<div class="">
-		{{ post.date | date: "%B %d, %Y" }}
-	</div>
-	{{ post.excerpt }}
-	<a href="{{ post.url }}">Read More...</a><br />
+
+<h4>Latest News</h4>
+
+<p>
+Next artpéro - August 4th 2017, Galerie Alpine.
+</p>
+
+<h4>Latest Blog Posts</h4>
+
+{% for post in site.posts limit:3 %}
+	<a href="{{ post.url }}"><strong>{{ post.title }}</strong></a>
+	<div>{{ post.author }}, {{ post.date | date: "%B %d, %Y" }}</div>
 	<br />
 {% endfor %}

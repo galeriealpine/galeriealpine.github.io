@@ -1,7 +1,7 @@
 ---
 title: Dent du Midi series
 author: Cat Saunders
-layout: studio
+layout: blog
 tags:
     - dents_du_midi
     - gilding

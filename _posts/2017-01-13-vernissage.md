@@ -1,7 +1,7 @@
 ---
 title: Vernissage
 author: Emma Pigott
-layout: events
+layout: blog
 tags:
     - evening_events
 image_dir: /img/2017/01/

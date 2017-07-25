@@ -1,7 +1,7 @@
 ---
 title: Le Regional
 author: Galerie Alpine
-layout: press
+layout: blog
 tags:
     - local_news
 image_dir: /img/2017/02/

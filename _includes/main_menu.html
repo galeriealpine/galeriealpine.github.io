@@ -14,8 +14,23 @@
 <nav class="navbar">
   <div class="container">
 	<ul class="navbar-list">
-	  <li class="navbar-item"><a class="navbar-link" href="/">Home</a></li>
-	  <li class="navbar-item"><a class="navbar-link" href="/about/">About</a></li>
+	  <li class="navbar-item"><a class="navbar-link" href="/blog/">Blog</a></li>
+	  <li class="navbar-item">
+		<a class="navbar-link" href="#" data-popover="#aboutistNavPopover">About</a>
+		<div id="aboutistNavPopover" class="popover">
+		  <ul class="popover-list">
+			<li class="popover-item">
+			  <a class="popover-link" href="/about/">The Gallery</a>
+			</li>
+			<li class="popover-item">
+			  <a class="popover-link" href="/contact/">Contact</a>
+			</li>
+			<li class="popover-item">
+			  <a class="popover-link" href="/association/">Association</a>
+			</li>
+		  </ul>
+		</div>
+	  </li>
 	  <li class="navbar-item">
 		<a class="navbar-link" href="#" data-popover="#artistNavPopover">Artists</a>
 		<div id="artistNavPopover" class="popover">
@@ -54,9 +69,6 @@
 		  </ul>
 		</div>
 	  </li>
-	  <li class="navbar-item"><a class="navbar-link" href="/blog/">Blog</a></li>
-	  <li class="navbar-item"><a class="navbar-link" href="/contact/">Contact</a></li>
-	  <li class="navbar-item"><a class="navbar-link" href="/association/">Association</a></li>
 
 	  <li class="navbar-icons">
 	<a class="navbar-icon" href="mailto:info@galeriealpine.com" original-title="email" title="send us an email">

@@ -11,6 +11,34 @@
 </section>
 
 <div class="navbar-spacer"></div>
+
+<!-- menu for small screens -->
+<nav class="phoneNavbar">
+  <div id="phone_menuToggle">
+    <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    <!-- Some spans to act as a hamburger -->
+    <span></span>
+    <span></span>
+    <span></span>
+    <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+    -->
+    <ul id="phone_menu">
+      <a class="navbar-link" href="/blog/"><li>Blog</li></a>
+      <a class="popover-link" href="/about/"><li>The Gallery</li></a>
+      <a class="popover-link" href="/contact/"><li>Contact</li></a>
+      <a class="popover-link" href="/artists/"><li>Artists</li></a>
+      <a class="popover-link" href="/atelier/art-classes/"><li>Art Classes</li></a>
+    </ul>
+  </div>
+</nav>
+
+<!-- menu for bigger screens -->
 <nav class="navbar">
   <div class="container">
 	<ul class="navbar-list">

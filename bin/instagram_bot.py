@@ -57,7 +57,7 @@ session.like_by_locations(
         '1326011394177026/hotel-du-golf-spa-villars-ch/'
     ],
     amount=10,
-    skip_top_posts=False
+    skip_top_posts=True
 )
 
 # like all photos with these tags, TODO: more tags
@@ -68,6 +68,7 @@ session.like_by_tags(
         'bretaye',
         'ollon',
     ],
+    skip_top_posts=True,
     amount=10
 )
 

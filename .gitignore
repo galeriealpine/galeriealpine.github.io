@@ -5,3 +5,6 @@ _site
 .DS_Store
 vim.*
 current_wp
+chromedriver
+bin/db
+bin/logs

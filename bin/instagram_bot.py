@@ -32,6 +32,8 @@ session.set_do_follow(
 # don't follow anyone with > 10000 followers
 session.set_upper_follower_count( limit=10000 )
 
+# note - keep sum of all likes to < 300 per hour
+
 # like anything posted here. TODO: les diablerets, chesieres, ollon, etc
 session.like_by_locations(
     [
@@ -54,7 +56,7 @@ session.like_by_locations(
         '221256543/chalet-royalp-hotel-spa/',
         '1326011394177026/hotel-du-golf-spa-villars-ch/'
     ],
-    amount=25,
+    amount=10,
     skip_top_posts=False
 )
 
@@ -66,7 +68,7 @@ session.like_by_tags(
         'bretaye',
         'ollon',
     ],
-    amount=25
+    amount=10
 )
 
 # end the bot session

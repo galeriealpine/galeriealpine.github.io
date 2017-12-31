@@ -5,8 +5,6 @@ from instapy import InstaPy
 
 insta_username = ''
 insta_password = ''
-session = ''
-#driver = webdriver.Chrome( '/Users/leejohnson/working/InstaPy/assets/chromedriver' )
 
 for line in open( '/Users/leejohnson/working/.ga_instagram_bot.cred' ):
     if insta_username == '':

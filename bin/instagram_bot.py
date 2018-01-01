@@ -54,7 +54,7 @@ session.like_by_locations(
         '221256543/chalet-royalp-hotel-spa/',
         '1326011394177026/hotel-du-golf-spa-villars-ch/'
     ],
-    amount=10,
+    amount=25,
     skip_top_posts=True
 )
 
@@ -67,7 +67,7 @@ session.like_by_tags(
         'ollon',
     ],
     skip_top_posts=True,
-    amount=10
+    amount=25
 )
 
 # end the bot session

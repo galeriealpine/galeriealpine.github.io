@@ -63,6 +63,7 @@ session.like_by_tags(
     [
         'villars',
         'villarssurollon',
+        'villarsgryon',
         'bretaye',
         'ollon',
     ],

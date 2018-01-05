@@ -64,8 +64,7 @@ session.like_by_tags(
         'villars',
         'villarssurollon',
         'villarsgryon',
-        'bretaye',
-        'ollon',
+        'bretaye'
     ],
     skip_top_posts=True,
     amount=25

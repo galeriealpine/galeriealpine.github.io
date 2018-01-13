@@ -40,6 +40,7 @@ session.like_by_locations(
         '216921418/villars/'
         '564436973/gare-bvb-de-villars-sur-ollon/',
         '293286136/bretaye/',
+        '518992906/le-chamossaire/',
         '664786822/vieux-villars/',
         '1020387703/givengain-foundation/',
         '688732577/coop-villars-sur-ollon/',
@@ -55,7 +56,7 @@ session.like_by_locations(
         '1326011394177026/hotel-du-golf-spa-villars-ch/'
     ],
     amount=25,
-    skip_top_posts=True
+    skip_top_posts=False
 )
 
 # like all photos with these tags, TODO: more tags
@@ -66,7 +67,7 @@ session.like_by_tags(
         'villarsgryon',
         'bretaye'
     ],
-    skip_top_posts=True,
+    skip_top_posts=False,
     amount=25
 )
 

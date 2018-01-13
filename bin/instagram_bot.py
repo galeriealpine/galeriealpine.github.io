@@ -33,43 +33,49 @@ session.set_upper_follower_count( limit=10000 )
 # note - keep sum of all likes to < 300 per hour
 
 # like anything posted here. TODO: les diablerets, chesieres, ollon, etc
-session.like_by_locations(
-    [
-        '670455/villars-sur-ollon/',
-        '241218410/villars-vaud-switzerland/',
-        '216921418/villars/'
-        '564436973/gare-bvb-de-villars-sur-ollon/',
-        '293286136/bretaye/',
-        '518992906/le-chamossaire/',
-        '664786822/vieux-villars/',
-        '1020387703/givengain-foundation/',
-        '688732577/coop-villars-sur-ollon/',
-        '1023825820/restaurant-le-sporting/',
-        '577417879055907/eurotel-victoria-villars/',
-        '1027509796/villars-ski-school/',
-        '1025781378/villars-big-international-big-band-meeting/',
-        '186149958596417/les-mazots-du-clos-luxury-guesthouse-spa/',
-        '1788630878061539/la-gourmandine/'
-        '321774021624847/villars-vanguard-live-music-club/',
-        '213218600/club-med-villars-sur-ollon/',
-        '221256543/chalet-royalp-hotel-spa/',
-        '1326011394177026/hotel-du-golf-spa-villars-ch/'
-    ],
-    amount=25,
-    skip_top_posts=False
-)
+try:
+    session.like_by_locations(
+        [
+            '670455/villars-sur-ollon/',
+            '241218410/villars-vaud-switzerland/',
+            '216921418/villars/'
+            '564436973/gare-bvb-de-villars-sur-ollon/',
+            '293286136/bretaye/',
+            '518992906/le-chamossaire/',
+            '664786822/vieux-villars/',
+            '1020387703/givengain-foundation/',
+            '688732577/coop-villars-sur-ollon/',
+            '1023825820/restaurant-le-sporting/',
+            '577417879055907/eurotel-victoria-villars/',
+            '1027509796/villars-ski-school/',
+            '1025781378/villars-big-international-big-band-meeting/',
+            '186149958596417/les-mazots-du-clos-luxury-guesthouse-spa/',
+            '1788630878061539/la-gourmandine/'
+            '321774021624847/villars-vanguard-live-music-club/',
+            '213218600/club-med-villars-sur-ollon/',
+            '221256543/chalet-royalp-hotel-spa/',
+            '1326011394177026/hotel-du-golf-spa-villars-ch/'
+        ],
+        amount=25,
+        skip_top_posts=False
+    )
+except:
+    print "Problem"
 
-# like all photos with these tags, TODO: more tags
-session.like_by_tags(
-    [
-        'villars',
-        'villarssurollon',
-        'villarsgryon',
-        'bretaye'
-    ],
-    skip_top_posts=False,
-    amount=25
-)
+try:
+    # like all photos with these tags, TODO: more tags
+    session.like_by_tags(
+        [
+            'villars',
+            'villarssurollon',
+            'villarsgryon',
+            'bretaye'
+        ],
+        skip_top_posts=False,
+        amount=25
+    )
+except:
+    print "Problem"
 
 # end the bot session
 session.end()

@@ -30,6 +30,20 @@ session.set_do_follow(
 # don't follow anyone with > 10000 followers
 session.set_upper_follower_count( limit=10000 )
 
+# unfollow users who don't follow us
+session.unfollow_users(
+    amount=10,
+    onlyNotFollowMe=True,
+    onlyInstapyMethod='FIFO',
+    sleep_delay=60
+)
+
+# but don't unfollow if they've liked one of our last 3 posts
+session.set_dont_unfollow_active_users(
+    enabled=True,
+    posts=3
+)
+
 # note - keep sum of all likes to < 300 per hour
 
 # like anything posted here. TODO: les diablerets, chesieres, ollon, etc

@@ -5,47 +5,47 @@ layout: main
 
 <p>We are a group of creative people who got together with the vision to create an exhibition space for our work and set up an art centre for <a href="/contact/">Villars-sur-Ollon</a>, in the heart of the Vaud Alps. Here you can find out more information about the <a href="/about/">gallery</a>, our <a href="/artists/">artists</a>, the <a href="/association/">association</a>, the latest <a href="/blog/">news</a>, and <a href="/contact/">where to find us</a>. You will also find us on <a href="https://www.facebook.com/Galerie-Alpine-136288323520164" target="_blank" rel="nofollow">Facebook</a>, <a href="https://www.instagram.com/galeriealpine/" target="_blank" rel="nofollow">Instagram</a>, and <a href="https://twitter.com/GalerieAlpine" target="_blank" rel="nofollow">Twitter</a>.</p>
 
-<u><h4>Latest News / Events</h4></u>
+<div class="row">
+	<div class="six columns">
+		<u><h5>Latest News / Events</h5></u>
 
-<h5>Carte de membre / Membership Card</h5>
+		<p><b>Carte de membre / Membership Card</b></p>
 
-<p>Devenez membre de l'Association GAA à partir du 1er janvier 2018 et bénéficiez de 10% de réduction sur tous les achats à la galerie et 10.-CHF de moins sur tous les tarifs <a href="/atelier/art-classes/">d’ateliers créatifs</a> jusqu'au 31 décembre 2018 : <a href="/img/atelier/art-classes/atelier_member_hours_2018.pdf">plus d'info</a>.</p>
+		<p>Devenez membre de l'Association GAA à partir du 1er janvier 2018 et bénéficiez de 10% de réduction sur tous les achats à la galerie et 10.-CHF de moins sur tous les tarifs <a href="/atelier/art-classes/">d’ateliers créatifs</a> jusqu'au 31 décembre 2018 : <a href="/img/atelier/art-classes/atelier_member_hours_2018.pdf">plus d'info</a>.</p>
 
-<p>Become a member of the GAA Association from 1st January 2018 and benefit from 10% off all purchases at the gallery and 10.-CHF off all <a href="/atelier/art-classes/">creative workshops</a> until 31st December 2018: <a href="/img/atelier/art-classes/atelier_member_hours_2018.pdf">more info</a>.</p>
+		<p>Become a member of the GAA Association from 1st January 2018 and benefit from 10% off all purchases at the gallery and 10.-CHF off all <a href="/atelier/art-classes/">creative workshops</a> until 31st December 2018: <a href="/img/atelier/art-classes/atelier_member_hours_2018.pdf">more info</a>.</p>
 
-<br />
+		<p><b>Contact us: </b><a href="mailto:info@galeriealpine.com">info@galeriealpine.com</a></p>
+
+		<u><h5>Latest Blog Posts</h5></u>
+
+		{% for post in site.posts limit:2 %}
+			<a href="{{ post.url }}"><strong>{{ post.title }}</strong></a>
+			<div>{{ post.author }}, {{ post.date | date: "%B %d, %Y" }}</div>
+			<br />
+		{% endfor %}
+	</div>
+
+	<div class="six columns">
 
 <!--
-<h5>Clay Modelling Workshops</h5>
+		<u><h5>Prochaine Artpéro / Next Artpéro</h5></u>
 
-16, 17, et 18 mars : 10h-13h<br />
-17 mars (pour les enfants) : 15h-17h
+		30 mars : 18h-20h30
 
-<div class="row">
-	<div class="twelve columns">
-		<img class="u-max-full-width" src="/img/workshop_mars.jpg" />
-	</div>
-</div>
-
-<br />
+		<a href="/img/artpero_mars16.jpg">
+			<img class="u-max-full-width" src="/img/artpero_mars16.jpg" />
+		</a>
 -->
 
-<h5>Prochaine Artpéro / Next Artpéro</h5>
+		<u><h5>Clay Modelling Workshops</h5></u>
 
-30 mars : 18h-20h30
+		6, 7, et 8 avril : 10h-13h<br />
+		7 et 8 avril (pour les enfants) : 15h-17h<br />
 
-<div class="row">
-	<div class="twelve columns">
-		<img class="u-max-full-width" src="/img/artpero_mars16.jpg" />
+		<a href="/img/workshop_avr.jpg">
+			<img class="u-max-full-width" src="/img/workshop_avr.jpg" />
+		</a>
 	</div>
 </div>
 
-<br />
-
-<u><h4>Latest Blog Posts</h4></u>
-
-{% for post in site.posts limit:3 %}
-	<a href="{{ post.url }}"><strong>{{ post.title }}</strong></a>
-	<div>{{ post.author }}, {{ post.date | date: "%B %d, %Y" }}</div>
-	<br />
-{% endfor %}

@@ -7,27 +7,6 @@ layout: main
 
 <div class="row">
 	<div class="six columns">
-		<u><h5>Latest News / Events</h5></u>
-
-		<p><b>Carte de membre / Membership Card</b></p>
-
-		<p>Devenez membre de l'Association GAA à partir du 1er janvier 2018 et bénéficiez de 10% de réduction sur tous les achats à la galerie et 10.-CHF de moins sur tous les tarifs <a href="/atelier/art-classes/">d’ateliers créatifs</a> jusqu'au 31 décembre 2018 : <a href="/img/atelier/art-classes/atelier_member_hours_2018.pdf">plus d'info</a>.</p>
-
-		<p>Become a member of the GAA Association from 1st January 2018 and benefit from 10% off all purchases at the gallery and 10.-CHF off all <a href="/atelier/art-classes/">creative workshops</a> until 31st December 2018: <a href="/img/atelier/art-classes/atelier_member_hours_2018.pdf">more info</a>.</p>
-
-		<p><b>Contact us: </b><a href="mailto:info@galeriealpine.com">info@galeriealpine.com</a></p>
-
-		<u><h5>Latest Blog Posts</h5></u>
-
-		{% for post in site.posts limit:2 %}
-			<a href="{{ post.url }}"><strong>{{ post.title }}</strong></a>
-			<div>{{ post.author }}, {{ post.date | date: "%B %d, %Y" }}</div>
-			<br />
-		{% endfor %}
-	</div>
-
-	<div class="six columns">
-
 <!--
 		<u><h5>Prochaine Artpéro / Next Artpéro</h5></u>
 
@@ -47,5 +26,24 @@ layout: main
 			<img class="u-max-full-width" src="/img/workshop_avr.jpg" />
 		</a>
 	</div>
-</div>
 
+	<div class="six columns">
+		<u><h5>Latest News / Events</h5></u>
+
+		<p><b>Carte de membre / Membership Card</b></p>
+
+		<p>Devenez membre de l'Association GAA à partir du 1er janvier 2018 et bénéficiez de 10% de réduction sur tous les achats à la galerie et 10.-CHF de moins sur tous les tarifs <a href="/atelier/art-classes/">d’ateliers créatifs</a> jusqu'au 31 décembre 2018 : <a href="/img/atelier/art-classes/atelier_member_hours_2018.pdf">plus d'info</a>.</p>
+
+		<p>Become a member of the GAA Association from 1st January 2018 and benefit from 10% off all purchases at the gallery and 10.-CHF off all <a href="/atelier/art-classes/">creative workshops</a> until 31st December 2018: <a href="/img/atelier/art-classes/atelier_member_hours_2018.pdf">more info</a>.</p>
+
+		<p><b>Contact us: </b><a href="mailto:info@galeriealpine.com">info@galeriealpine.com</a></p>
+
+		<u><h5>Latest Blog Posts</h5></u>
+
+		{% for post in site.posts limit:2 %}
+			<a href="{{ post.url }}"><strong>{{ post.title }}</strong></a>
+			<div>{{ post.author }}, {{ post.date | date: "%B %d, %Y" }}</div>
+			<br />
+		{% endfor %}
+	</div>
+</div>

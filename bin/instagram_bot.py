@@ -32,7 +32,7 @@ session.set_upper_follower_count( limit=10000 )
 
 # unfollow users who don't follow us
 session.unfollow_users(
-    amount=10,
+    amount=100,
     onlyNotFollowMe=True,
     onlyInstapyMethod='FIFO',
     sleep_delay=60

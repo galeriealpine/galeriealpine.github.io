@@ -36,7 +36,7 @@ session.set_do_follow(
 session.unfollow_users(
     amount=250,
     nonFollowers=True,
-    InstapyFollowed=(True, "all"),
+    style="RANDOM",
     sleep_delay=60
 )
 

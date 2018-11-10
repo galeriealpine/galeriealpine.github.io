@@ -34,7 +34,7 @@ session.set_do_follow(
 
 # unfollow users who don't follow us
 session.unfollow_users(
-    amount=500,
+    amount=750,
     nonFollowers=True,
     style="RANDOM",
     sleep_delay=60,

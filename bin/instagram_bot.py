@@ -28,13 +28,13 @@ session.set_relationship_bounds(
 # follow everyone we like
 session.set_do_follow(
     enabled=True,
-    percentage=100,
+    percentage=10,
     times=2
 )
 
 # unfollow users who don't follow us
 session.unfollow_users(
-    amount=1000,
+    amount=100,
     InstapyFollowed=( True,"all" ),
     style="RANDOM",
     sleep_delay=60,

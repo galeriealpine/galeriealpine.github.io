@@ -33,7 +33,7 @@ session.set_delimit_liking(
 # follow everyone we like
 session.set_do_follow(
     enabled=True,
-    percentage=10,
+    percentage=25,
     times=2
 )
 

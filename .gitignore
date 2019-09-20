@@ -8,3 +8,4 @@ current_wp
 chromedriver
 bin/db
 bin/logs
+logs/

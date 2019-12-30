@@ -27,7 +27,8 @@ session.set_relationship_bounds(
 
 session.set_delimit_liking(
     enabled=True,
-    max=300, min=0
+    max_likes=2000,
+    min_likes=0
 )
 
 # follow everyone we like
@@ -40,7 +41,7 @@ session.set_do_follow(
 # unfollow users who don't follow us
 session.unfollow_users(
     amount=100,
-    InstapyFollowed=( True,"all" ),
+    instapy_followed_enabled=True,
     style="RANDOM",
     sleep_delay=60,
 )

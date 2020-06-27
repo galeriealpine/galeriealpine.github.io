@@ -1,3 +1,12 @@
+.artists {
+  font-size: 12px;
+}
+.artists h5 {
+  font-size: 18px;
+}
+.artists h3 {
+  font-size: 22px;
+}
 body {
   text-align:justify; }
 h1,

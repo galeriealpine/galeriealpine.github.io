@@ -9,3 +9,4 @@ chromedriver
 bin/db
 bin/logs
 logs/
+.jekyll*
